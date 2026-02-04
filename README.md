@@ -1,45 +1,33 @@
-# Hi there, I'm Lubos Strejcek 👋
+# Hi, I'm Lubos Strejcek 👋
 
 ## About Me
 
-🔋 Interested in **energy monitoring**, **home automation**, and **IoT**
-🏠 Building smart home solutions with open-source tools
-📍 Czech Republic
+Software developer from Czech Republic with interest in:
+
+- 🔋 Energy monitoring & solar systems
+- 🏠 Home automation & IoT
+- 📊 Data visualization
+- 🐳 Docker & self-hosted solutions
+
+## Current Projects
+
+### Victron Energy Monitoring Stack
+
+Docker-based solution for monitoring Victron Energy systems, created during Victron Energy Training Center Brno.
+
+| Repository | Description |
+|------------|-------------|
+| [victron-nodered](https://github.com/lubosstrejcek/victron-nodered) | MQTT data collection |
+| [victron-influxdb](https://github.com/lubosstrejcek/victron-influxdb) | Time-series storage |
+| [victron-grafana](https://github.com/lubosstrejcek/victron-grafana) | Dashboards |
+
+## Tech Stack
+
+![Node-RED](https://img.shields.io/badge/Node--RED-8F0000?style=flat&logo=nodered&logoColor=white)
+![InfluxDB](https://img.shields.io/badge/InfluxDB-22ADF6?style=flat&logo=influxdb&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ---
 
-## 🌟 Featured Project: Victron Energy Monitoring Stack
-
-A complete Docker-based monitoring solution for Victron Energy systems.
-
-Created during **Victron Energy Training Center Brno - Node-RED Training**.
-
-### Architecture
-
-```
-┌─────────────┐      ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
-│  Ekrano GX  │─MQTT─▶│  Node-RED   │─────▶│  InfluxDB   │─────▶│   Grafana   │
-│   (Victron) │      │  (Process)  │      │  (Store)    │      │ (Visualize) │
-└─────────────┘      └─────────────┘      └─────────────┘      └─────────────┘
-```
-
-### Repositories
-
-| Component | Description | Status |
-|-----------|-------------|--------|
-| [**victron-nodered**](https://github.com/lubosstrejcek/victron-nodered) | Node-RED flows for MQTT data collection | ✅ Ready |
-| [**victron-influxdb**](https://github.com/lubosstrejcek/victron-influxdb) | InfluxDB 2.x time-series database | ✅ Ready |
-| [**victron-grafana**](https://github.com/lubosstrejcek/victron-grafana) | Grafana dashboards with auto-provisioning | ✅ Ready |
-
-### Quick Start
-
-```bash
-# Clone all three repos and run with docker compose
-git clone https://github.com/lubosstrejcek/victron-influxdb && cd victron-influxdb && cp .env.example .env && docker compose up -d && cd ..
-git clone https://github.com/lubosstrejcek/victron-nodered && cd victron-nodered && cp .env.example .env && docker compose up -d && cd ..
-git clone https://github.com/lubosstrejcek/victron-grafana && cd victron-grafana && cp .env.example .env && docker compose up -d && cd ..
-```
-
----
-
-*Feel free to use these repositories for inspiration or as a starting point for your own Victron monitoring setup.*
+*Feel free to explore my repositories and use them for inspiration.*
